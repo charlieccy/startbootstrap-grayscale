@@ -273,6 +273,12 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
  
     <style>
+      .slider{
+      padding: 10rem 0 0;
+      }
+    </style>
+
+    <style>
       .slick-dots{
       position: absolute;
       bottom: 20px;
@@ -303,7 +309,7 @@
       background-color: #ffffff;
     }
     .slick-dots li.slick-active button:before{
-      background-color: green;
+      background-color: rgb(2, 167, 117);
     }
     </style>
 
@@ -326,7 +332,7 @@
         display: block;
         width: 20px;
         height: 20px;
-        border-color: #ffffff;
+        border-color: rgb(2, 167, 117) ;
         content: '';
       }
       .slick-buttons.slick-prev{
@@ -337,14 +343,14 @@
         border-left-width: 8px;
         border-top-style: solid;
         border-left-style: solid;
-        transform: rotate(-45deg);
+        transform: rotate(-90deg);
       }
       .slick-buttons.slick-next:before{
         border-bottom-width: 8px;
         border-right-width: 8px;
         border-bottom-style: solid;
         border-right-style: solid;
-        transform: rotate(-45deg);
+        transform: rotate(-90deg);
       }
       .slick-buttons.slick-next{
         right: 20px;
