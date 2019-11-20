@@ -25,7 +25,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="">
 
-
+  <link rel="stylesheet" type="text/css" href="grayscale.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster&display=swap" rel="stylesheet">
+  
+  <style>
+    h1{
+        font-family: 'Indie Flower', cursive;
+    }
+    h2{
+        font-family: 'Indie Flower', cursive;
+    }
+    .secondary-font {
+        font-family: 'Indie Flower', cursive;
+        font-size: 25px;
+    }
+    #primary-title{
+         font-size: 50px;   
+         color: rgb(12, 12, 128)
+    }
+</style>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -65,7 +83,7 @@
             <a class="nav-link js-scroll-trigger" href="#intro">Intro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Artworks</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
@@ -80,7 +98,7 @@
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Charlie's world</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Hi there</h2>
+        <h2 class="text-black-100 mx-auto mt-2 mb-5">Welcome to Charlie's portfolio </h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
       </div>
     </div>
@@ -91,14 +109,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-          <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right
-            now, simply download the template on
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open
-            source, and you can use it for any purpose, personal or commercial.</p>
+          <h2 class="text-black-100 mb-4">Who am I?</h2>
+          <p class="text-black-100">I am Charlie from the Polytechnic University. I major in advertising design.
+            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a></p>
+            <img class="img-fluid" src="img/slider/personal.jpg" alt="">
         </div>
       </div>
-      <img src="img/ipad.png" class="img-fluid" alt="">
     </div>
   </section>
 
@@ -138,7 +154,7 @@
             <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open
             source, and you can use it for any purpose, personal or commercial.</p>
           <div class="intro-video">
-            <iframe width="100%" src="https://www.youtube.com/embed/6fpTxpOABMc" frameborder="0"
+            <iframe width="100%" src="https://youtu.be/cLVKn4dzA6o" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <br/>
@@ -162,11 +178,11 @@
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+          <img class="img-fluid mb-3 mb-lg-0" src="img/slider/propic.png" alt="">
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
+            <h4>My Artworks</h4>
             <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any
               project - even commercial projects! Download it, customize it, and publish your website!</p>
           </div>
@@ -176,13 +192,26 @@
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          <div class="slider project-slider">
+            <div class="image-bg" style="background-image: url(img/slider/d1.jpg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/d2.jpg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/d3.png);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/d4.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/d5.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/d6.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/d7.jpg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/d8.jpg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/d9.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/daily.jpg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/d10.jpg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/d11.jpg);"></div>
+          </div>
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">project 1</h4>
+                <h4 class="text-white">Daily Sketches</h4>
                 <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else,
                   along with a description.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
@@ -195,13 +224,16 @@
       <!-- Project Two Row -->
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+          <div class="slider project-slider">
+            <div class="image-bg" style="background-image: url(img/slider/sweet.jpg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/chan.jpg);"></div>
+          </div>
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">project 2</h4>
+                <h4 class="text-white">Posters</h4>
                 <p class="mb-0 text-white-50">Another example of a project with its respective description. These
                   sections work well responsively as well, try this theme on a small screen!</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
@@ -221,13 +253,16 @@
             <div class="image-bg" style="background-image: url(img/slider/5.jpg);"></div>
             <div class="image-bg" style="background-image: url(img/slider/6.jpg);"></div>
             <div class="image-bg" style="background-image: url(img/slider/7.jpg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/1.jpg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/2.jpg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/3.jpg);"></div>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">project 3</h4>
+                <h4 class="text-white">Photos</h4>
                 <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else,
                   along with a description.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
@@ -264,16 +299,25 @@
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
           <div class="slider project-slider">
-            <div class="image-bg" style="background-image: url(img/slider/1.jpg);"></div>
-            <div class="image-bg" style="background-image: url(img/slider/2.jpg);"></div>
-            <div class="image-bg" style="background-image: url(img/slider/3.jpg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.001.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.002.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.003.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.004.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.005.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.006.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.007.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.008.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.009.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.010.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.011.jpeg);"></div>
+            <div class="image-bg" style="background-image: url(img/slider/story.012.jpeg);"></div>
           </div>
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">project 4</h4>
+                <h4 class="text-white">Storyboard</h4>
                 <p class="mb-0 text-white-50">Another example of a project with its respective description. These
                   sections work well responsively as well, try this theme on a small screen!</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
@@ -292,8 +336,8 @@
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+          <i class="far fa-paper-plane fa-2x mb-2 text-black"></i>
+          <h2 class="text-black mb-5">Subscribe to receive updates!</h2>
 
           <form class="form-inline d-flex">
             <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail"
@@ -328,7 +372,7 @@
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Address</h4>
               <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+              <div class="small text-black-50">V 521, V core, Polyu</div>
             </div>
           </div>
         </div>
@@ -340,7 +384,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
+                <a href="#">charlie520chan@gmail.com</a>
               </div>
             </div>
           </div>
@@ -376,7 +420,7 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Charlie chan
+      Copyright &copy; Charlie chan@2019
     </div>
   </footer>
 
@@ -425,11 +469,11 @@
       height: 10px;
       border-radius: 5px;
       content: '';
-      background-color: #ffffff;
+      background-color: #e4e4e4;
     }
 
     .slick-dots li.slick-active button:before {
-      background-color: rgb(2, 167, 117);
+      background-color: #64a19d;
     }
   </style>
 
@@ -455,7 +499,7 @@
       display: block;
       width: 20px;
       height: 20px;
-      border-color: rgb(2, 167, 117);
+      border-color: #64a19d;
       content: '';
     }
 
