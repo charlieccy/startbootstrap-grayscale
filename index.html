@@ -4,6 +4,7 @@
 <head>
 
   <!-- COMMON TAGS -->
+
   <meta charset="utf-8">
   <title>Charlie's world</title>
   <!-- Search Engine -->
@@ -26,18 +27,33 @@
 
   <link rel="stylesheet" type="text/css" href="grayscale.min.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css?family=adobe+caslon=swap" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/caslon-os" type="text/css"/>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/sans-guilt" type="text/css"/>
   <style>
     h1{
-       font-family: "Gill Sans", sans-serif;
+       font-family: 'CaslonOSRegular' , serif;
+       font-style: normal;
+       font-weight: normal;
     }
 
     h2{
-      
-      font-family: "Gill Sans", sans-serif;
+      font-family: "SansGuiltMBMedium", sans-serif;
     }
+    #h2{
+    font-size: 0.8cm;
+    }
+
+    h3{    
+    font-family: "SansGuiltMBMedium", sans-serif;
+    }
+
+    #h3{
+    font-size: 0.8cm;
+    }
+    
     h4{
-      font-family: "Gill Sans", sans-serif;
+      font-family: "SansGuiltMBMedium", sans-serif;
     }
      @font-face{ 
       font-family: 'cwTeXYen';
@@ -48,26 +64,38 @@
        url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
        url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
        url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
-     }
-    
-     h5{
+     }        
+
+
+     
+    h5{
       font-family: 'cwTeXYen', sans-serif;
     } 
+    #h5{
+    font-size:1cm;
+    }
 
     li{
-      font-family: "Gill Sans", sans-serif;
+      font-family: "SansGuiltMBMedium", sans-serif;
     }
     a{
-      font-family: "Gill Sans", sans-serif;
+      font-family: "SansGuiltMBMedium", sans-serif;
     }
     p{
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'SansGuiltMBMedium', sans-serif;
+    }
+
+    #p{
+      font-size:0.7cm
+    }
+    #o{
+      font-size:0.55cm
     }
     div{
-      font-family: "Gill Sans", sans-serif;
+      font-family: "SansGuiltMBMedium", sans-serif;
     }
     .secondary-font {
-        font-family: "Gill Sans", sans-serif;
+        font-family: "SansGuiltMBMedium", sans-serif;
         font-size: 25px;
     }
     #primary-title{
@@ -98,7 +126,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Charlie chan</a>
+      <a id='h3'class="navbar-brand js-scroll-trigger" href="#page-top">Charlie chan</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -108,16 +136,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a id='h3'class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#intro">Intro</a>
+            <a id='h3'class="nav-link js-scroll-trigger" href="#intro">Intro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Artworks</a>
+            <a id='h3'class="nav-link js-scroll-trigger" href="#projects">Artworks</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            <a id='h3'class="nav-link js-scroll-trigger" href="#signup">Contact</a>
           </li>
         </ul>
       </div>
@@ -126,25 +154,33 @@
 
   <!-- Header -->
   <header class="masthead">
+    <div class="masthead" style="background-image: url(img/slider/bbg2.png);"></div>
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Charlie's world</h1>
-        <h2 class="text-black-100 mx-auto mt-2 mb-5">Welcome to Charlie's portfolio </h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        <div id='h2' class="text-black-100 mx-auto mt-2 mb-5" >Welcome to Charlie's portfolio </div>
+        <a id='h1'href="#row" class="btn btn-primary js-scroll-trigger">Press to Start</a>
       </div>
     </div>
   </header>
-
+  <style>
+  .about-section {
+    padding: 100rem 0 0;
+  }
+  </style>
   <!-- About Section -->
   <section id="about" class="about-section text-center">
-    <div class="container">
+    <div id='row'class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-black-100 mb-4">Who am I?</h2>
-          <h5 class="mb-4">我是誰？</h5>
-          <p class="text-black-100">I am Charlie from the Polytechnic University. I am a Year 2 Advertising Design student. I love drawing, thinking, reading, travelling and listening to music.
-          And here's my photo:)</p>
-          <h5 class="text-black-100">我是Charlie,一個理工大學廣告設計系二年級的學生。平常我會畫畫，讀書，聽歌，旅遊和思考。:)</h5>
+          <h2 class="text-black-100 mb-4">      </h2>
+          <h2 class="text-black-100 mb-4">      </h2>
+            <h2 class="text-black-100 mb-4">      </h2>
+          <h2 class="text-black-100 mb-4">      </h2>
+          <h1 id='h5' class="text-black-100 mb-4">WHO AM I?</h1>
+          <div id='h5'class="text-black-100 mb-4">我是誰？</div>
+          <p id='p' class="text-black-100">I am Charlie from the Polytechnic University. I am a Year 2 Advertising Design student. I love drawing, thinking, reading, travelling and listening to music.
+          And here's my photo:)</p><h5 class="text-black-100">我是Charlie,一個理工大學廣告設計系二年級的學生。平常我會畫畫，讀書，聽歌，旅遊和思考。:)</h5>
             <img class="img-fluid" src="img/slider/personal.jpg" alt="">
         </div>
       </div>
@@ -180,8 +216,7 @@
       background-position: center center;
       background-size: contain;
       background-repeat: no-repeat;
-      }
-
+    }
   </style>
 
   <!-- Intro Section -->
@@ -189,20 +224,20 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2 class="mb-4">Introduction</h2>
-          <h5 class="mb-4">自我介紹</h5>
-          <p>This is the beginning of my Portfolio. You can listen to this song while you are browsing my artworks. Enjoy! :)</p>
-          <h5>這是我作品習的開始。你可以一邊聽歌一邊觀賞我的作品。:)</h5>
+          <h1 id='h5' class="mb-4">INTRODUCTION</h1>
+          <div id='h5'>自我介紹</div>
+          <p id='p'>This is the beginning of my Portfolio. You can listen to this song while you are browsing my artworks. Enjoy! :)</p>
+          <h5 id='p'>這是我作品習的開始。你可以一邊聽歌一邊觀賞我的作品。:)</h5>
           <div class="intro-video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/cLVKn4dzA6o" frameborder="0" 
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <br/>
           <br/>
-          <p>I studied Fine Arts in my secondary school life.
+          <p id='p'>I studied Fine Arts in my secondary school life.
              Therefore, it would be a challenge for me to study design in University because fine art and design are totally different.
               Here are my SBA portfolie, daily sketches in my secondary school life and some designs I have done before.</p>
-          <h5>我在中學時是在學習視覺藝術的，因此我在大學等於從新學習“設計”這一門新學問。
+          <h5 id='p'>我在中學時是在學習視覺藝術的，因此我在大學等於從新學習“設計”這一門新學問。
             下面是我中學時期的作品習，日常繪圖和一些初期的設計。</h5>
           <div class="slider">
             <div><img src="img/slider/SBA.jpg"></div>
@@ -250,12 +285,12 @@
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4>My Artworks</h4>
+            <h1 id='h5'>My Artworks</h1>
             <h5>我的作品</h5>
-            <p class="text-black-50 mb-0">The pictures below are my Daily sketches, Poster and Logos, 
+            <p id='o'class="text-black-50 mb-0">The pictures below are my Daily sketches, Poster and Logos, 
               Photos and Storyboard done in the previous Semester. They are all different from what
                I have done before.</p>
-               <h5 class="text-black-50 mb-0">
+               <h5 id='o'class="text-black-50 mb-0">
                 下面是一些我在大學初期的日常繪圖，海報設計，商標設計，相片和分鏡。
                 對我而言，這些作品與我以往做的完全不同。
                </h5>
@@ -267,7 +302,7 @@
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
           <div class="slider project-slider">
-            <div class="image-bg" style="background-image: url(img/slider/d1.jpg);"></div>
+      <div class="image-bg" style="background-image: url(img/slider/d1.jpg);"></div>
             <div class="image-bg" style="background-image: url(img/slider/d2.jpg);"></div>
             <div class="image-bg" style="background-image: url(img/slider/d3.png);"></div>
             <div class="image-bg" style="background-image: url(img/slider/d4.jpeg);"></div>
@@ -284,9 +319,9 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Daily Sketches</h4><h5 class="text-white">日常繪圖</h5>
-                <p class="mb-0 text-white-50">There are some daily sketches drawn when I was bored.</p>
-                <h5 class="mb-0 text-white-50">這些是我在無聊時會畫的繪圖。</h5>
+                <h1 class="text-white">Daily Sketches</h1><h5 class="text-white">日常繪圖</h5>
+                <p id='o'class="mb-0 text-white-50">There are some daily sketches drawn when I was bored.</p>
+                <h5 id='o'class="mb-0 text-white-50">這些是我在無聊時會畫的繪圖。</h5>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -308,13 +343,13 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Posters and Logos</h4>
+                <h1 class="text-white">Posters and Logos</h1>
                 <h5 class="text-white">海報和商標設計</h5>
-                <p class="mb-0 text-white-50">The first poster is about a song called "Sweet but Psycho"</p>
-                <p class="mb-0 text-white-50">The second poster is made based on the feeling of "Hope"</p>
-                <p class="mb-0 text-white-50">The logos are made for a Koi fish expert</p>
-                <h5 class="mb-0 text-white-50">第一張海報是關於一首叫<h4 class="mb-0 text-white-50">"Sweet but Psycho"</h4> 
-                  <h5 class="mb-0 text-white-50">的歌。第二張海報是根據“希望”這種情感做出來的。而那些商標是以”錦鯉專家“為題的。</h5>
+                <p id='o'class="mb-0 text-white-50">The first poster is about a song called "Sweet but Psycho"</p>
+                <p id='o'class="mb-0 text-white-50">The second poster is made based on the feeling of "Hope"</p>
+                <p id='o'class="mb-0 text-white-50">The logos are made for a Koi fish expert</p>
+                <h5 id='o'class="mb-0 text-white-50">第一張海報是關於一首叫<h4 class="mb-0 text-white-50">"Sweet but Psycho"</h4> 
+                  <h5 id='o'class="mb-0 text-white-50">的歌。第二張海報是根據“希望”這種情感做出來的。而那些商標是以”錦鯉專家“為題的。</h5>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -346,10 +381,10 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Photos</h4>
+                <h1 class="text-white">Photos</h1>
                 <h5 class="text-white">相片</h5>
-                <p class="mb-0 text-white-50">I am a travelholic. These are some photos I took when I travelled to Taiwan :)</p>
-                <h5 class="mb-0 text-white-50">我很喜歡旅遊，這裹有一些我去台灣時拍的照片。</h5>
+                <p id='o'class="mb-0 text-white-50">I am a travelholic. These are some photos I took when I travelled to Taiwan :)</p>
+                <h5 id='o'class="mb-0 text-white-50">我很喜歡旅遊，這裹有一些我去台灣時拍的照片。</h5>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -402,10 +437,10 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Storyboard</h4>
+                <h1 class="text-white">Storyboard</h1>
                 <h5 class="text-white">分鏡</h5>
-                <p class="mb-0 text-white-50">This part is my favourite. I really enjoy creating a story and it is a story of a superhero and his evil wife.</p>
-                <h5 class="mb-0 text-white-50">這是我最喜歡的部分，因為我本身很喜歡創作故事。而這個故事是關於一個退休超級英雄與他邪惡妻子的故事。</h5>
+                <p id='o'class="mb-0 text-white-50">This part is my favourite. I really enjoy creating a story and it is a story of a superhero and his evil wife.</p>
+                <h5 id='o'class="mb-0 text-white-50">這是我最喜歡的部分，因為我本身很喜歡創作故事。而這個故事是關於一個退休超級英雄與他邪惡妻子的故事。</h5>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -430,10 +465,10 @@
     <div class="bg-black text-center h-100 project">
       <div class="d-flex h-100">
         <div class="project-text w-100 my-auto text-center text-lg-left">
-          <h4 class="text-white">Copywriting</h4>
+          <h1 class="text-white">Copywriting</h1>
           <h5 class="text-white">文案</h5>
-          <p class="mb-0 text-white-50">I love reading many different stories and watching different movies. Therefore, I have many ideas in my mind to write a copy. </p>
-          <h5 class="mb-0 text-white-50">我很喜歡看不同的故事和電影，所以我腦海裏會有得多不同的情節可以用來寫文案。</h5>
+          <p id='o'class="mb-0 text-white-50">I love reading many different stories and watching different movies. Therefore, I have many ideas in my mind to write a copy. </p>
+          <h5 id='o'class="mb-0 text-white-50">我很喜歡看不同的故事和電影，所以我腦海裏會有得多不同的情節可以用來寫文案。</h5>       
           <hr class="d-none d-lg-block mb-0 ml-0">
         </div>
       </div>
@@ -471,10 +506,10 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Real Brand Project</h4>
+                <h1 class="text-white">Real Brand Project</h1>
                 <h5 class="text-white"> 品牌設計</h5>
-                <p class="mb-0 text-white-50">This is a real client project that me and my team have to make some print ad and brand building for a new sub-brand of Camel print</p>
-                <h5 class="mb-0 text-white-50">這是一份品牌設計的功課，我和我的組員為駱駝漆即將成立的子品牌設計品牌方向和各種包裝設計和宣傳海報等。</h5>
+                <p id='o'class="mb-0 text-white-50">This is a real client project that me and my team have to make some print ad and brand building for a new sub-brand of Camel print</p>
+                <h5 id='o'class="mb-0 text-white-50">這是一份品牌設計的功課，我和我的組員為駱駝漆即將成立的子品牌設計品牌方向和各種包裝設計和宣傳海報等。</h5>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -488,9 +523,12 @@
         <br/>
         <br/>
         <div class="mb-4 text-center bg-light">
-        <h2 class="mb-4">The Nesbitt Centre</h2>
-        <p>This is a real client project that me and my team made a campaign for The Nesbitt Centre, which is a centre aims at helping the mentally disable people.</p>
-        <p>We create a character call "arm arm" and made a series of 4 posters</p></div>
+        <h1 id='h5'class="mb-4">The Nesbitt Centre</h1>
+        <div id='h5'>思拔中心</div>
+        <p id='p'>This is a real client project that me and my team made a campaign for The Nesbitt Centre, which is a centre aims at helping the mentally disable people.
+        We create a character call "Arm Arm" and made a series of 4 posters</p>
+        <p id='p'>這是一份品牌設計的功課，思拔中心，是一家為提供以英語為本的教育課程給予有學習障礙的國際成年人士的慈善機構。
+          而我和我的組員為思拔中心製作了一個吉詳物“啱啱”，以及一系列的宣傳海報和周邊商品。</p></div>
         <div class="slider">
           <div><img src="img/slider/armarm 1.png"></div>
           <div><img src="img/slider/armarm4.png"></div>
@@ -508,9 +546,11 @@
 <br/>
 <br/>
 <div class="mb-4 text-center bg-light">
-<h2 class="mb-4">M.A.C</h2>
-<p>This is a real client project that me and my team made a campaign for The Nesbitt Centre, which is a centre aims at helping the mentally disable people.</p>
-<p>We create a character call "arm arm" and made a series of 4 posters</p></div>
+<h1 id='h5'class="mb-4">M.A.C cosmetic</h1>
+<p id='p'>This is a marketing group project that we have to propose a new advertising strategy for M.A.C
+  and create some executions to show support for the strategy.
+We create a Instagram challenge, Instagram filter and Snapchat Games.</p>
+<p id='p'>這是一份市場策略的功課，我和我的組員要為M.A.C提出新的廣告策略，並設計一些平面廣告來顯示新的廣告策策略。</p>
 <div class="slider">
   <div><img src="img/slider/MAC.png"></div>
   <div><img src="img/slider/igstory.png"></div>
@@ -523,7 +563,8 @@
 <br/>
 <br/>
 <div class="mb-4 text-center bg-light">
-<h2 class="mb-4">Recent Sketch</h2>
+<h1 id='h5'class="mb-4">Recent Sketch</h1>
+<div id='h5'>最近的作品</div>
 <div class="slider">
   <div><img src="img/slider/cloth.png"></div>
   <div><img src="img/slider/400.png"></div>
